@@ -82,8 +82,8 @@ provider.on('block', async (blockNumber) => {
               message = `**New BrettMiner Deposit!**\n\n💸 *Spent*: $${spentInUSD} (≈ ${convertedToBrett} $BRETT)`;
               inlineKeyboard = [
                 [
-                  { text: '👤 Acheteur sur BaseScan', url: `https://basescan.org/address/${transaction.from}` },
-                  { text: '🔗 Voir la transaction', url: `https://basescan.org/tx/${transaction.hash}` }
+                  { text: '👤 Buyer', url: `https://basescan.org/address/${transaction.from}` },
+                  { text: '🔗 Tx', url: `https://basescan.org/tx/${transaction.hash}` }
                 ],
                 [
                   { text: '💰 Deposit $BRETT', url: 'https://github.com/cycyeth/BrettMinerDapp' }
