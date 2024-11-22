@@ -10,7 +10,7 @@ const bot = new TelegramBot(token, { polling: true });
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.base.org');
 
 // Adresse du contrat du protocole
-const protocolContractAddress = '0x2cF88805B665E2F14244065c8317eEa29967118A';
+const protocolContractAddress = '0xb69360dB3696f35b5469b65c03Abd5538c493c82';
 
 // ABI minimal incluant les fonctions de dépôt
 const protocolAbi = [
@@ -86,7 +86,7 @@ provider.on('block', async (blockNumber) => {
                   { text: '🔗 Tx', url: `https://basescan.org/tx/${transaction.hash}` }
                 ],
                 [
-                  { text: '💰 Deposit $BRETT', url: 'https://github.com/cycyeth/BrettMinerDapp' }
+                  { text: '💰 Deposit $BRETT', url: 'https://www.brettminerbase.xyz/' }
                 ]
               ];
               break;
@@ -107,7 +107,7 @@ provider.on('block', async (blockNumber) => {
                   { text: '🔗 Tx', url: `https://basescan.org/tx/${transaction.hash}` }
                 ],
                 [
-                  { text: '💰 Deposit $BRETT', url: 'https://github.com/cycyeth/BrettMinerDapp' }
+                  { text: '💰 Deposit $BRETT', url: 'https://www.brettminerbase.xyz/' }
                 ]
               ];
               break;
@@ -118,7 +118,7 @@ provider.on('block', async (blockNumber) => {
           }
 
           // Envoyer l'image avec le message et les boutons inline
-          bot.sendPhoto('-1002353442289', imageUrl, {
+          bot.sendPhoto('-1002491468656', imageUrl, {
             caption: message,
             parse_mode: 'Markdown',
             reply_markup: {
