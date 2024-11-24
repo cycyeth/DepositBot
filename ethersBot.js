@@ -26,7 +26,7 @@ const brettTokenAddress = '0x532f27101965dd16442e59d40670faf5ebb142e4';
 const protocolContract = new ethers.Contract(protocolContractAddress, protocolAbi, provider);
 
 // URL de l'image à afficher
-const imageUrl = 'https://imgur.com/a/MQseUlz';
+const imageUrl = 'https://imgur.com/tiEdCrU';
 
 // Fonction pour obtenir le prix actuel de $BRETT
 async function getBrettPrice() {
