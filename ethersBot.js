@@ -79,7 +79,7 @@ provider.on('block', async (blockNumber) => {
               } else {
                 convertedToBrett = (spentInUSD / brettPrice).toFixed(2); // Conversion en $BRETT sans multiplication
               }
-              message = `**New BrettMiner Deposit!**\n\n💸 *Spent*: $${spentInUSD} (≈ ${convertedToBrett} $BRETT)`;
+              message = `**New BrettMiner Deposit!**\n\n💸 *Spent*: $${spentInUSD}`;
               inlineKeyboard = [
                 [
                   { text: '👤 Buyer', url: `https://basescan.org/address/${transaction.from}` },
@@ -100,7 +100,7 @@ provider.on('block', async (blockNumber) => {
               } else {
                 spentInUSD = (parseFloat(brettAmount) * brettPriceForBrett).toFixed(2);
               }
-              message = `**New BrettMiner Deposit!**\n\n💸 *Spent*: $${spentInUSD} (≈ ${brettAmount} $BRETT)`;
+              message = `**New BrettMiner Deposit!**\n\n💸 *Spent*: $${spentInUSD}`;
               inlineKeyboard = [
                 [
                   { text: '👤 Buyer', url: `https://basescan.org/address/${transaction.from}` },
