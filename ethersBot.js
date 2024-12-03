@@ -10,7 +10,7 @@ const bot = new TelegramBot(token, { polling: true });
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.base.org');
 
 // Adresse du contrat du protocole
-const protocolContractAddress = '0xb69360dB3696f35b5469b65c03Abd5538c493c82';
+const protocolContractAddress = '0x8B6D91CaE528be7eD3e2394d48Cb423065784595';
 
 // ABI minimal incluant les fonctions de dépôt
 const protocolAbi = [
